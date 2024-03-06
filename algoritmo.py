@@ -49,7 +49,6 @@ clf.fit(X_train, y_train)
 
 # Avaliação do modelo
 predictions = clf.predict(X_test)
-print(classification_report(y_test, predictions))
 
 # Salvar os potenciais duplicados para análise futura
 duplicates.to_csv('duplicadasEncontradas.csv', index=False)
